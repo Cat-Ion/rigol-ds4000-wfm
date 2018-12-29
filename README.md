@@ -10,4 +10,5 @@ The settings of the oscilloscope seem to be in the range 0x00-0xEC1. After
 that, the range 0xEC2-0x51EB seems to be filled by random data (after the
 oscilloscope boots) or partial data from the last saved file (after a file has
 been saved). The remaining data starting at offset 0x51EC contains the channel
-data and padding.
+data and padding. If an exported channel's coupling is set to GND, its data
+will apparently be an AC measurement instead.
